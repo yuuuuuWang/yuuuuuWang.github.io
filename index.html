@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anthony's webpage</title>
+    <link rel="icon" href="angry.ico" type="image/ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset = utf-8">
+    <style>
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-color:#FAD689;">
+
+    <h1 style="font-size:300%;" align="center">王昱淇ㄉ個人網站</h1>
+    <br><br>
+    <img src="Anthony.jpg" alt="My photo"
+        style="width:384px;height: 300px; margin: 15px; position:absolute;top:100px;left: 550px;">
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <h2 align="middle"><span style="font-size:30px;">Biograhy</span></h2>
+    <hr>
+    <pre><span class="inner-pre" style="font-size: 20px">
+             Hello~~~! I am a 20 year-old student stduying in National Taiwan University. My hometown is Chiayi county, 
+        which is a beautiful countryside. I graduated from <a href="https://www.cysh.cy.edu.tw/" title="Go to CYSH's website">Chiayi Senior High School</a> two years ago, and I'm now studying 
+        in the <a href="https://web.ee.ntu.edu.tw/" title="Go to NTUEE's website">department of Electric Engineering</a>. Here are some of my hobbies:
+        1. I love watching funny films and anime on the Chinese website called "bilibili". <a href="https://www.bilibili.com/" title="Go to bilibili">Visit bilibili here!</a>
+        2. I love listening to Japanese music. For example, YOASOBI is one of my favorite singer.
+           (In fact, the background music of this website is one of their song.) <a href="https://www.youtube.com/channel/UCvpredjG93ifbCP1Y77JyFA" title="Go to YOASOBI's Youtube channel">Visit YOASOBI's youtube channel here!</a>
+        3. During weekend, I enjoy watching dramas and movies on Netflix. I signed up a membership for it with my high school friends.
+           <a href="https://www.netflix.com/browse" title="Go to Netflix">Visit Netflix here!</a>
+    </span>
+    </pre>
+    <hr>
+    <h5>BGM:YOASOBI-もう少しだけ</h5>
+    <audio controls loop>
+        <source src="yoasobi.mp3" type="audio/mpeg">
+    </audio>
+    <br><br>
+    <script language="JavaScript">
+        function ShowTime() {
+            var NowDate = new Date();
+            var h = ('0' + NowDate.getHours()).substr(-2);
+            var m = ('0' + NowDate.getMinutes()).substr(-2);
+            var s = ('0' + NowDate.getSeconds()).substr(-2);
+            var mo = NowDate.getMonth() + 1;
+            var d = NowDate.getDate();
+            var y = NowDate.getFullYear();
+            document.getElementById('showbox').innerHTML = 'Time table: ' + mo + '-' + d + '-' + y + ' ' + h + ':' + m + ':' + s;
+            setTimeout('ShowTime()', 1000);
+        }
+    </script>
+
+    <body onload="ShowTime()">
+        <div id="showbox"></div>
+    </body>
+
+</html>
